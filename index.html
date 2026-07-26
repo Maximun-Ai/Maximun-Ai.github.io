@@ -1,160 +1,336 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="dark scroll-smooth">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maximun-Ai | Edge AI & Low-cost IoT Ecosystems</title>
-    <style>
-        :root {
-            --bg-color: #0f172a;
-            --card-bg: #1e293b;
-            --text-primary: #f8fafc;
-            --text-secondary: #94a3b8;
-            --accent: #38bdf8;
-            --accent-hover: #0284c7;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO & AI Crawler Friendly Meta Tags -->
+  <title>Maximun-Ai | AI Project Orchestrator & Edge Computing Architect</title>
+  <meta name="description" content="Official portal for Maximun-Ai. Divergent-Thinking / AI Project Orchestrator & Edge Computing Architect. Low-cost IoT, Domotics, Hierarchical Reasoning Models (HRM), and Embedded Systems." />
+  <meta name="keywords" content="Maximun-Ai, AI Project Orchestrator, Edge Computing, Hierarchical Prompt Engineering, HRM, Low-Cost IoT, Embedded Systems, Domotics, Divergent Thinking" />
+  <meta name="author" content="Maximun-Ai" />
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-primary);
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
+  <!-- Tipografía Técnica -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
-        .container {
-            max-width: 800px;
-            margin: 20px;
-            padding: 40px;
-            background-color: var(--card-bg);
-            border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-            border: 1px solid #334155;
-        }
+  <!-- Tailwind CSS CDN & Lucide Icons -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
 
-        header {
-            border-bottom: 1px solid #334155;
-            padding-bottom: 20px;
-            margin-bottom: 25px;
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              deep: '#030712',      /* Fondo ultranoche */
+              card: '#0f172a',      /* Fondo tarjetas */
+              border: '#1e293b',    /* Bordes sutiles */
+              accent: '#38bdf8',    /* Azul brillante */
+              green: '#34d399',     /* Verde terminal */
+              whatsapp: '#25D366'   /* Verde WhatsApp */
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['Space Grotesk', 'sans-serif'],
+          }
         }
+      }
+    }
+  </script>
 
-        h1 {
-            color: var(--accent);
-            font-size: 2.5rem;
-            margin: 0 0 10px 0;
-        }
-
-        .tagline {
-            font-size: 1.1rem;
-            color: var(--text-secondary);
-            font-weight: 500;
-        }
-
-        p.description {
-            line-height: 1.6;
-            font-size: 1.05rem;
-            color: #cbd5e1;
-        }
-
-        .pillars {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 15px;
-            margin: 30px 0;
-        }
-
-        .pillar-card {
-            background-color: #0f172a;
-            padding: 15px 20px;
-            border-radius: 8px;
-            border-left: 4px solid var(--accent);
-        }
-
-        .pillar-card h3 {
-            margin: 0 0 5px 0;
-            font-size: 1rem;
-            color: var(--text-primary);
-        }
-
-        .pillar-card p {
-            margin: 0;
-            font-size: 0.875rem;
-            color: var(--text-secondary);
-        }
-
-        .actions {
-            margin-top: 30px;
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 12px 24px;
-            border-radius: 6px;
-            background-color: var(--accent);
-            color: #0f172a;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background-color 0.2s ease;
-        }
-
-        .btn:hover {
-            background-color: var(--accent-hover);
-            color: #ffffff;
-        }
-
-        footer {
-            margin-top: 40px;
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-            text-align: center;
-        }
-    </style>
+  <style>
+    /* Efectos de resplandor técnico */
+    .glow-effect {
+      box-shadow: 0 0 25px -5px rgba(56, 189, 248, 0.15);
+    }
+    .glow-effect:hover {
+      box-shadow: 0 0 35px 0px rgba(56, 189, 248, 0.25);
+    }
+  </style>
 </head>
-<body>
 
-    <div class="container">
-        <header>
-            <h1>Maximun-Ai</h1>
-            <div class="tagline">Systems Architect & AI Orchestrator</div>
-        </header>
+<body class="bg-[#030712] text-slate-200 font-sans antialiased selection:bg-sky-500 selection:text-black">
 
-        <main>
-            <p class="description">
-                Official web portal for <strong>Maximun-Ai</strong>. Dedicated to designing low-cost IoT ecosystems, local LLMs/HRMs, Edge AI, and hybrid cloud solutions on resource-constrained hardware.
-            </p>
+  <!-- GRID DE FONDO DECORATIVO -->
+  <div class="fixed inset-0 bg-[linear-gradient(to_right,#1e293b15_1px,transparent_1px),linear-gradient(to_bottom,#1e293b15_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none -z-10"></div>
 
-            <div class="pillars">
-                <div class="pillar-card">
-                    <h3>Edge AI & Local LLMs</h3>
-                    <p>Deployment of efficient local models on edge hardware.</p>
-                </div>
-                <div class="pillar-card">
-                    <h3>Low-Cost IoT</h3>
-                    <p>Hardware architecture and embedded ecosystem integration.</p>
-                </div>
-                <div class="pillar-card">
-                    <h3>Hierarchical Reasoning</h3>
-                    <p>Advanced AI orchestration and structured problem-solving.</p>
-                </div>
-            </div>
+  <!-- HEADER / NAVEGACIÓN -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-[#030712]/90 backdrop-blur-md border-b border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      
+      <!-- Marca Principal -->
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded bg-sky-500/10 border border-sky-400/30 flex items-center justify-center text-sky-400 shadow-sm shadow-sky-500/20">
+          <i data-lucide="cpu" class="w-4 h-4 animate-pulse"></i>
+        </div>
+        <span class="font-mono font-bold text-lg tracking-wider text-white">MAXIMUN<span class="text-sky-400">.AI</span></span>
+      </div>
 
-            <div class="actions">
-                <a href="https://github.com/Maximun-Ai" class="btn" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
-                <a href="mailto:multiservicioscluz@gmail.com" class="btn" style="background-color: transparent; border: 1px solid var(--accent); color: var(--accent);">Contact Us</a>
-            </div>
-        </main>
+      <!-- Menú de Secciones -->
+      <nav class="hidden md:flex items-center gap-8 text-xs font-mono tracking-wide text-slate-400">
+        <a href="#about" class="hover:text-sky-400 transition-colors">// MANIFIESTO</a>
+        <a href="#pilares" class="hover:text-sky-400 transition-colors">// ESPECIALIZACIÓN</a>
+        <a href="#repositorios" class="hover:text-sky-400 transition-colors">// REPOSITORIOS</a>
+        <a href="#contacto" class="hover:text-sky-400 transition-colors">// CONEXIONES</a>
+      </nav>
 
-        <footer>
-            &copy; Maximun-Ai. All rights reserved.
-        </footer>
+      <!-- Badge de Estado General -->
+      <div class="px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+        ORCHESTRATOR ONLINE
+      </div>
     </div>
+  </header>
 
+  <main class="pt-24 pb-16">
+    
+    <!-- HERO SECTION: MANIFIESTO Y PERFIL -->
+    <section id="about" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Descripción de Marca y Enfoque -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded border border-sky-500/20 bg-sky-950/30 text-xs font-mono text-sky-400">
+            <span class="w-2 h-2 rounded-full bg-sky-400 animate-pulse"></span>
+            AI PROJECT ORCHESTRATOR & EDGE COMPUTING ARCHITECT
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-mono font-bold text-white tracking-tight leading-tight">
+            Maximun<span class="text-sky-400">-Ai</span>
+          </h1>
+
+          <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+            Punto focal de ingeniería para arquitecturas <strong>Divergent-Thinking</strong>, integración de <strong>Hierarchical Reasoning Models (HRM)</strong> y despliegue de soluciones <strong>Low-Cost IoT</strong> en sistemas embebidos y hardware revalorizado.
+          </p>
+
+          <p class="text-slate-400 text-sm leading-relaxed font-mono bg-slate-900/40 p-4 rounded border-l-2 border-sky-400">
+            "Hierarchical Prompt Engineering | Embedded Systems & Domotics | Hybrid Systems & Edge Computing."
+          </p>
+
+          <!-- Acciones Principales Directas -->
+          <div class="flex flex-wrap gap-4 pt-4 font-mono text-xs">
+            <a href="https://wa.me/5492268415977?text=Hola%20Maximun-Ai,%20me%20interesa%20conocer%20mas%20sobre%20tu%20perfil%20y%20proyectos." target="_blank" rel="noopener noreferrer" class="px-5 py-3 rounded bg-emerald-600 hover:bg-emerald-500 text-white font-semibold transition-all flex items-center gap-2 shadow-lg shadow-emerald-600/20">
+              <i data-lucide="message-square" class="w-4 h-4"></i> Contactar por WhatsApp
+            </a>
+
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="px-5 py-3 rounded bg-blue-600/20 border border-blue-500/40 hover:bg-blue-600/30 text-blue-400 font-semibold transition-all flex items-center gap-2">
+              <i data-lucide="linkedin" class="w-4 h-4"></i> Perfil de LinkedIn
+            </a>
+          </div>
+
+          <!-- Métricas de Infraestructura -->
+          <div class="grid grid-cols-3 gap-4 pt-6 border-t border-slate-800/80 font-mono">
+            <div class="bg-slate-900/40 p-3 rounded border border-slate-800">
+              <span class="text-[10px] text-slate-500 uppercase block">Estrategia</span>
+              <span class="text-xs font-bold text-sky-400">Divergent-Thinking</span>
+            </div>
+            <div class="bg-slate-900/40 p-3 rounded border border-slate-800">
+              <span class="text-[10px] text-slate-500 uppercase block">Razonamiento</span>
+              <span class="text-xs font-bold text-emerald-400">HRM & Prompt Eng.</span>
+            </div>
+            <div class="bg-slate-900/40 p-3 rounded border border-slate-800">
+              <span class="text-[10px] text-slate-500 uppercase block">Despliegue</span>
+              <span class="text-xs font-bold text-sky-300">Edge & Embedded IoT</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Terminal de Estado / Status de Orquestación -->
+        <div class="lg:col-span-5">
+          <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-5 shadow-2xl font-mono text-xs space-y-4 glow-effect transition-all">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-red-500/80 inline-block"></span>
+                <span class="w-3 h-3 rounded-full bg-yellow-500/80 inline-block"></span>
+                <span class="w-3 h-3 rounded-full bg-green-500/80 inline-block"></span>
+              </div>
+              <span class="text-slate-500 text-[10px]">MAXIMUN_ORCHESTRATOR_CORE</span>
+            </div>
+
+            <div class="space-y-2 text-slate-300">
+              <p class="text-sky-400">&gt; initializing Maximun-Ai Engine...</p>
+              <p class="text-slate-400">&gt; Status: <span class="text-emerald-400 font-bold">ONLINE</span></p>
+              <p class="text-slate-400">&gt; Active Specialization Layers:</p>
+              <ul class="pl-4 space-y-1.5 text-[11px] text-slate-300 border-l border-slate-800">
+                <li class="flex items-center justify-between">
+                  <span>• Hierarchical Prompt Eng.</span>
+                  <span class="text-sky-400 font-bold">[ACTIVE]</span>
+                </li>
+                <li class="flex items-center justify-between">
+                  <span>• Edge Computing & IoT</span>
+                  <span class="text-emerald-400 font-bold">[READY]</span>
+                </li>
+                <li class="flex items-center justify-between">
+                  <span>• Embedded Domotics Core</span>
+                  <span class="text-emerald-400 font-bold">[STANDBY]</span>
+                </li>
+                <li class="flex items-center justify-between">
+                  <span>• Divergent AI Orchestration</span>
+                  <span class="text-sky-300 font-bold">[ENABLED]</span>
+                </li>
+              </ul>
+              <p class="text-slate-500 pt-3 text-[10px] border-t border-slate-800/60">&gt; Primary Node: <span class="text-slate-300">Maximun-360@proton.me</span></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PILARES TÉCNICOS INTEGRADOS -->
+    <section id="pilares" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-slate-800/60">
+      <div class="mb-12">
+        <span class="text-xs font-mono text-sky-400 uppercase tracking-widest">// PILARES Y ESPECIALIZACIÓN</span>
+        <h2 class="text-2xl sm:text-3xl font-mono font-bold text-white mt-1">Capacidades de Orquestación</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Tarjeta 1: HRM & Prompt Engineering -->
+        <div class="bg-slate-900/50 border border-slate-800 p-6 rounded-lg hover:border-sky-500/40 transition-all glow-effect">
+          <div class="w-10 h-10 rounded bg-sky-500/10 text-sky-400 flex items-center justify-center mb-4">
+            <i data-lucide="workflow" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-mono font-bold text-white text-base mb-2">Hierarchical Reasoning (HRM)</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Ingeniería de prompts jerárquica y estructuras de razonamiento modular para coordinar agentes de IA complejos en entornos acotados.
+          </p>
+        </div>
+
+        <!-- Tarjeta 2: Edge & Embedded IoT -->
+        <div class="bg-slate-900/50 border border-slate-800 p-6 rounded-lg hover:border-emerald-500/40 transition-all glow-effect">
+          <div class="w-10 h-10 rounded bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-4">
+            <i data-lucide="cpu" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-mono font-bold text-white text-base mb-2">Embedded Systems & Domotics</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Protocolos IoT, automatización domótica y microcontroladores integrados sobre infraestructura de bajo costo y hardware recuperado.
+          </p>
+        </div>
+
+        <!-- Tarjeta 3: Hybrid & Divergent AI -->
+        <div class="bg-slate-900/50 border border-slate-800 p-6 rounded-lg hover:border-sky-400/40 transition-all glow-effect">
+          <div class="w-10 h-10 rounded bg-sky-400/10 text-sky-300 flex items-center justify-center mb-4">
+            <i data-lucide="network" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-mono font-bold text-white text-base mb-2">Hybrid Systems Architect</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Integración de procesamiento en el borde (Edge Computing) y nube híbrida impulsados por estrategias de pensamiento divergente.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECCIÓN DE REPOSITORIOS VECTORIZADOS (LISTOS PARA VINCULAR) -->
+    <section id="repositorios" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-slate-800/60">
+      <div class="mb-12">
+        <span class="text-xs font-mono text-sky-400 uppercase tracking-widest">// PROYECTOS VECTORIZADOS</span>
+        <h2 class="text-2xl sm:text-3xl font-mono font-bold text-white mt-1">Nodos de Repositorios Principales</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 font-mono">
+        
+        <!-- Repo 1: Domótica IA Web -->
+        <div class="p-6 rounded-xl bg-slate-900/70 border border-slate-800 hover:border-sky-500/50 transition-all glow-effect space-y-4">
+          <div class="flex justify-between items-start">
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded bg-sky-500/10 text-sky-400 flex items-center justify-center">
+                <i data-lucide="home" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-white text-base">Domótica IA Web</h3>
+                <span class="text-[10px] text-slate-500">Embedded IoT / Domotics Control</span>
+              </div>
+            </div>
+            <span class="text-[10px] px-2 py-0.5 rounded bg-sky-500/10 border border-sky-500/30 text-sky-400">AUDITING</span>
+          </div>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Ecosistema de control domótico en tiempo real con agentes de IA integrados para la gestión inteligente de sensores y actuadores locales.
+          </p>
+          <div class="pt-2 flex items-center justify-between border-t border-slate-800/60 text-[11px]">
+            <span class="text-slate-500">Estado: Pendiente de auditoría</span>
+            <!-- Cuando tengas la URL, reemplaza '#' por el enlace real -->
+            <a href="#" class="text-sky-400 hover:underline flex items-center gap-1 opacity-60 pointer-events-none">
+              <span>Ver Repo</span> <i data-lucide="external-link" class="w-3 h-3"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Repo 2: Maximun Multihardware Core -->
+        <div class="p-6 rounded-xl bg-slate-900/70 border border-slate-800 hover:border-emerald-500/50 transition-all glow-effect space-y-4">
+          <div class="flex justify-between items-start">
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded bg-emerald-500/10 text-emerald-400 flex items-center justify-center">
+                <i data-lucide="cpu" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-white text-base">Maximun Multihardware Core</h3>
+                <span class="text-[10px] text-slate-500">Hardware Salvage / Edge Processing</span>
+              </div>
+            </div>
+            <span class="text-[10px] px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/30 text-emerald-400">AUDITING</span>
+          </div>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Núcleo de orquestación heterogénea diseñado para ejecutar modelos de lenguaje jerárquicos sobre hardware revalorizado y arquitectura distribuida.
+          </p>
+          <div class="pt-2 flex items-center justify-between border-t border-slate-800/60 text-[11px]">
+            <span class="text-slate-500">Estado: Pendiente de auditoría</span>
+            <!-- Cuando tengas la URL, reemplaza '#' por el enlace real -->
+            <a href="#" class="text-emerald-400 hover:underline flex items-center gap-1 opacity-60 pointer-events-none">
+              <span>Ver Repo</span> <i data-lucide="external-link" class="w-3 h-3"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECCIÓN DE CONTACTO FINAL -->
+    <section id="contacto" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-slate-800/60 text-center">
+      <div class="max-w-2xl mx-auto space-y-6">
+        <h3 class="font-mono font-bold text-white text-xl">¿Interesado en conectar o colaborar?</h3>
+        <p class="text-xs text-slate-400 leading-relaxed">
+          Puntos de contacto oficiales de la infraestructura Maximun-Ai para consultas técnicas y desarrollo.
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-4 font-mono text-xs pt-2">
+          <a href="https://wa.me/5492268415977?text=Hola%20Maximun-Ai,%20me%20interesa%20conectar." target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded bg-emerald-600/20 border border-emerald-500/40 hover:bg-emerald-600/30 text-emerald-400 font-semibold transition-all flex items-center gap-2">
+            <i data-lucide="message-square" class="w-4 h-4"></i> +54 9 2268 415977
+          </a>
+
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded bg-blue-600/20 border border-blue-500/40 hover:bg-blue-600/30 text-blue-400 font-semibold transition-all flex items-center gap-2">
+            <i data-lucide="linkedin" class="w-4 h-4"></i> LinkedIn Profile
+          </a>
+
+          <a href="mailto:Maximun-360@proton.me" class="px-5 py-2.5 rounded bg-purple-600/20 border border-purple-500/40 hover:bg-purple-600/30 text-purple-300 font-semibold transition-all flex items-center gap-2">
+            <i data-lucide="mail" class="w-4 h-4 text-purple-400"></i> Maximun-360@proton.me
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-800/80 bg-[#030712] py-8 text-xs font-mono text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <p>&copy; Maximun-Ai // AI Project Orchestrator & Edge Computing Architect. All rights reserved.</p>
+      <div class="flex gap-4 text-slate-400">
+        <a href="#about" class="hover:text-sky-400">Página Oficial</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
+
 </html>
