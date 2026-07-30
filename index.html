@@ -4,14 +4,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#030712" />
   
   <!-- SEO & AI Crawler Friendly Meta Tags -->
   <title>Maximun-Ai | AI Project Orchestrator & Edge Computing Architect</title>
-  <meta name="description" content="Official portal for Maximun-Ai. Divergent-Thinking / AI Project Orchestrator & Edge Computing Architect. Low-cost IoT, Domotics, Hierarchical Reasoning Models (HRM), and Embedded Systems." />
-  <meta name="keywords" content="Maximun-Ai, AI Project Orchestrator, Edge Computing, Hierarchical Prompt Engineering, HRM, Low-Cost IoT, Embedded Systems, Domotics, Divergent Thinking" />
+  <meta name="description" content="Official portal for Maximun-Ai. AI Project Orchestrator & Edge Computing Architect specializing in Hierarchical Reasoning Models, Low-Cost IoT, Embedded Systems, and Domotics." />
+  <meta name="keywords" content="Maximun-Ai, AI Project Orchestrator, Edge Computing, Hierarchical Prompt Engineering, HRM, Low-Cost IoT, Embedded Systems, Domotics, Divergent Thinking, AI Architecture" />
   <meta name="author" content="Maximun-Ai" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Maximun-Ai | AI Project Orchestrator & Edge Computing Architect" />
+  <meta property="og:description" content="Official portal for AI innovation and edge computing solutions." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://maximun-ai.github.io" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Maximun-Ai | AI Project Orchestrator" />
 
-  <!-- Tipografía Técnica -->
+  <!-- Tipografía Técnica Optimizada -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -20,6 +28,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
 
+  <!-- Configuración de Tailwind optimizada -->
   <script>
     tailwind.config = {
       darkMode: 'class',
@@ -27,17 +36,32 @@
         extend: {
           colors: {
             brand: {
-              deep: '#030712',      /* Fondo ultranoche */
-              card: '#0f172a',      /* Fondo tarjetas */
-              border: '#1e293b',    /* Bordes sutiles */
-              accent: '#38bdf8',    /* Azul brillante */
-              green: '#34d399',     /* Verde terminal */
-              whatsapp: '#25D366'   /* Verde WhatsApp */
+              deep: '#030712',
+              card: '#0f172a',
+              border: '#1e293b',
+              accent: '#38bdf8',
+              green: '#34d399',
+              whatsapp: '#25D366'
             }
           },
           fontFamily: {
             sans: ['Inter', 'sans-serif'],
             mono: ['Space Grotesk', 'sans-serif'],
+          },
+          animation: {
+            'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'glow-pulse': 'glow-pulse 2s ease-in-out infinite',
+            'float': 'float 6s ease-in-out infinite',
+          },
+          keyframes: {
+            'glow-pulse': {
+              '0%, 100%': { boxShadow: '0 0 25px -5px rgba(56, 189, 248, 0.15)' },
+              '50%': { boxShadow: '0 0 35px 0px rgba(56, 189, 248, 0.25)' },
+            },
+            'float': {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-8px)' },
+            }
           }
         }
       }
@@ -45,12 +69,46 @@
   </script>
 
   <style>
-    /* Efectos de resplandor técnico */
+    /* Efectos de resplandor técnico optimizados */
     .glow-effect {
       box-shadow: 0 0 25px -5px rgba(56, 189, 248, 0.15);
+      transition: box-shadow 0.3s ease-out;
     }
     .glow-effect:hover {
       box-shadow: 0 0 35px 0px rgba(56, 189, 248, 0.25);
+    }
+
+    /* Animación suave para cards */
+    .card-hover {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+    }
+
+    /* Smooth scroll behavior */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Focus visible para accesibilidad */
+    *:focus-visible {
+      outline: 2px solid #38bdf8;
+      outline-offset: 2px;
+    }
+
+    /* Optimización de rendimiento */
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    /* Link styling profesional */
+    a {
+      text-decoration: none;
     }
   </style>
 </head>
@@ -65,25 +123,25 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       
       <!-- Marca Principal -->
-      <div class="flex items-center gap-3">
+      <a href="#about" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
         <div class="w-8 h-8 rounded bg-sky-500/10 border border-sky-400/30 flex items-center justify-center text-sky-400 shadow-sm shadow-sky-500/20">
-          <i data-lucide="cpu" class="w-4 h-4 animate-pulse"></i>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 14a3 3 0 0 0-3-3h-2.207a.5.5 0 0 0-.331.067l-1.5 1M6.5 9H4a3 3 0 0 0-3 3v2a3 3 0 0 0 3 3h2.207a.5.5 0 0 0 .331-.067l1.5-1M12 10v4M12 2v2M20 2v2M2 15v-3M20 15v-3"></path></svg>
         </div>
         <span class="font-mono font-bold text-lg tracking-wider text-white">MAXIMUN<span class="text-sky-400">.AI</span></span>
-      </div>
+      </a>
 
       <!-- Menú de Secciones -->
       <nav class="hidden md:flex items-center gap-8 text-xs font-mono tracking-wide text-slate-400">
-        <a href="#about" class="hover:text-sky-400 transition-colors">// MANIFIESTO</a>
-        <a href="#pilares" class="hover:text-sky-400 transition-colors">// ESPECIALIZACIÓN</a>
-        <a href="#repositorios" class="hover:text-sky-400 transition-colors">// REPOSITORIOS</a>
-        <a href="#contacto" class="hover:text-sky-400 transition-colors">// CONEXIONES</a>
+        <a href="#about" class="hover:text-sky-400 transition-colors duration-200">// MANIFIESTO</a>
+        <a href="#pilares" class="hover:text-sky-400 transition-colors duration-200">// ESPECIALIZACIÓN</a>
+        <a href="#repositorios" class="hover:text-sky-400 transition-colors duration-200">// REPOSITORIOS</a>
+        <a href="#contacto" class="hover:text-sky-400 transition-colors duration-200">// CONEXIONES</a>
       </nav>
 
-      <!-- Badge de Estado General -->
+      <!-- Badge de Estado -->
       <div class="px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono flex items-center gap-2">
-        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-        ORCHESTRATOR ONLINE
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse-slow"></span>
+        ONLINE
       </div>
     </div>
   </header>
@@ -94,11 +152,11 @@
     <section id="about" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
-        <!-- Descripción de Marca y Enfoque -->
+        <!-- Descripción de Marca -->
         <div class="lg:col-span-7 space-y-6">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded border border-sky-500/20 bg-sky-950/30 text-xs font-mono text-sky-400">
-            <span class="w-2 h-2 rounded-full bg-sky-400 animate-pulse"></span>
-            AI PROJECT ORCHESTRATOR & EDGE COMPUTING ARCHITECT
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded border border-sky-500/20 bg-sky-950/30 text-xs font-mono text-sky-400 animate-pulse-slow">
+            <span class="w-2 h-2 rounded-full bg-sky-400"></span>
+            AI PROJECT ORCHESTRATOR
           </div>
 
           <h1 class="text-4xl sm:text-5xl lg:text-6xl font-mono font-bold text-white tracking-tight leading-tight">
@@ -106,49 +164,56 @@
           </h1>
 
           <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
-            Punto focal de ingeniería para arquitecturas <strong>Divergent-Thinking</strong>, integración de <strong>Hierarchical Reasoning Models (HRM)</strong> y despliegue de soluciones <strong>Low-Cost IoT</strong> en sistemas embebidos y hardware revalorizado.
+            Ingeniero especializado en arquitecturas <strong>Divergent-Thinking</strong>, integración de <strong>Hierarchical Reasoning Models (HRM)</strong> e implementación de soluciones <strong>Edge Computing</strong> y <strong>IoT de bajo costo</strong>.
           </p>
 
           <p class="text-slate-400 text-sm leading-relaxed font-mono bg-slate-900/40 p-4 rounded border-l-2 border-sky-400">
-            "Hierarchical Prompt Engineering | Embedded Systems & Domotics | Hybrid Systems & Edge Computing."
+            "Hierarchical Prompt Engineering • Embedded Systems & Domotics • Hybrid Systems & Edge Computing"
           </p>
 
-          <!-- Acciones Principales Directas -->
+          <!-- Acciones Principales -->
           <div class="flex flex-wrap gap-4 pt-4 font-mono text-xs">
-            <a href="https://wa.me/5492268415977?text=Hola%20Maximun-Ai,%20me%20interesa%20conocer%20mas%20sobre%20tu%20perfil%20y%20proyectos." target="_blank" rel="noopener noreferrer" class="px-5 py-3 rounded bg-emerald-600 hover:bg-emerald-500 text-white font-semibold transition-all flex items-center gap-2 shadow-lg shadow-emerald-600/20">
-              <i data-lucide="message-square" class="w-4 h-4"></i> Contactar por WhatsApp
+            <a href="https://wa.me/5492268415977?text=Hola%20Maximun-Ai,%20me%20interesa%20conocer%20mas%20sobre%20tu%20perfil%20y%20proyectos." target="_blank" rel="noopener noreferrer" class="px-5 py-3 rounded bg-emerald-600/20 border border-emerald-500/40 hover:bg-emerald-600/30 text-emerald-400 font-semibold transition-all flex items-center gap-2 glow-effect card-hover">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+              WhatsApp
             </a>
 
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="px-5 py-3 rounded bg-blue-600/20 border border-blue-500/40 hover:bg-blue-600/30 text-blue-400 font-semibold transition-all flex items-center gap-2">
-              <i data-lucide="linkedin" class="w-4 h-4"></i> Perfil de LinkedIn
+            <a href="https://www.linkedin.com/company/maximun-ai-org/" target="_blank" rel="noopener noreferrer" class="px-5 py-3 rounded bg-blue-600/20 border border-blue-500/40 hover:bg-blue-600/30 text-blue-400 font-semibold transition-all flex items-center gap-2 glow-effect card-hover">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+
+            <a href="https://github.com/Maximun-Ai" target="_blank" rel="noopener noreferrer" class="px-5 py-3 rounded bg-slate-700/20 border border-slate-600/40 hover:bg-slate-700/30 text-slate-300 font-semibold transition-all flex items-center gap-2 glow-effect card-hover">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
             </a>
           </div>
 
           <!-- Métricas de Infraestructura -->
           <div class="grid grid-cols-3 gap-4 pt-6 border-t border-slate-800/80 font-mono">
-            <div class="bg-slate-900/40 p-3 rounded border border-slate-800">
+            <div class="bg-slate-900/40 p-3 rounded border border-slate-800 hover:border-sky-500/30 transition-colors card-hover">
               <span class="text-[10px] text-slate-500 uppercase block">Estrategia</span>
               <span class="text-xs font-bold text-sky-400">Divergent-Thinking</span>
             </div>
-            <div class="bg-slate-900/40 p-3 rounded border border-slate-800">
+            <div class="bg-slate-900/40 p-3 rounded border border-slate-800 hover:border-emerald-500/30 transition-colors card-hover">
               <span class="text-[10px] text-slate-500 uppercase block">Razonamiento</span>
               <span class="text-xs font-bold text-emerald-400">HRM & Prompt Eng.</span>
             </div>
-            <div class="bg-slate-900/40 p-3 rounded border border-slate-800">
+            <div class="bg-slate-900/40 p-3 rounded border border-slate-800 hover:border-sky-300/30 transition-colors card-hover">
               <span class="text-[10px] text-slate-500 uppercase block">Despliegue</span>
               <span class="text-xs font-bold text-sky-300">Edge & Embedded IoT</span>
             </div>
           </div>
         </div>
 
-        <!-- Terminal de Estado / Status de Orquestación -->
+        <!-- Terminal de Estado -->
         <div class="lg:col-span-5">
-          <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-5 shadow-2xl font-mono text-xs space-y-4 glow-effect transition-all">
+          <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-5 shadow-2xl font-mono text-xs space-y-4 glow-effect card-hover">
             <div class="flex items-center justify-between border-b border-slate-800 pb-3">
               <div class="flex items-center gap-2">
-                <span class="w-3 h-3 rounded-full bg-red-500/80 inline-block"></span>
-                <span class="w-3 h-3 rounded-full bg-yellow-500/80 inline-block"></span>
-                <span class="w-3 h-3 rounded-full bg-green-500/80 inline-block"></span>
+                <span class="w-3 h-3 rounded-full bg-red-500/80 inline-block animate-pulse"></span>
+                <span class="w-3 h-3 rounded-full bg-yellow-500/80 inline-block animate-pulse" style="animation-delay: 0.2s"></span>
+                <span class="w-3 h-3 rounded-full bg-green-500/80 inline-block animate-pulse" style="animation-delay: 0.4s"></span>
               </div>
               <span class="text-slate-500 text-[10px]">MAXIMUN_ORCHESTRATOR_CORE</span>
             </div>
@@ -193,9 +258,9 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         
         <!-- Tarjeta 1: HRM & Prompt Engineering -->
-        <div class="bg-slate-900/50 border border-slate-800 p-6 rounded-lg hover:border-sky-500/40 transition-all glow-effect">
+        <div class="bg-slate-900/50 border border-slate-800 p-6 rounded-lg hover:border-sky-500/40 transition-all glow-effect card-hover">
           <div class="w-10 h-10 rounded bg-sky-500/10 text-sky-400 flex items-center justify-center mb-4">
-            <i data-lucide="workflow" class="w-5 h-5"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="12 3 20 7.5 20 16.5 12 21 4 16.5 4 7.5 12 3"></polyline><line x1="12" y1="12" x2="20" y2="7.5"></line><line x1="12" y1="12" x2="12" y2="21"></line><line x1="12" y1="12" x2="4" y2="7.5"></line></svg>
           </div>
           <h3 class="font-mono font-bold text-white text-base mb-2">Hierarchical Reasoning (HRM)</h3>
           <p class="text-slate-400 text-xs leading-relaxed">
@@ -204,9 +269,9 @@
         </div>
 
         <!-- Tarjeta 2: Edge & Embedded IoT -->
-        <div class="bg-slate-900/50 border border-slate-800 p-6 rounded-lg hover:border-emerald-500/40 transition-all glow-effect">
+        <div class="bg-slate-900/50 border border-slate-800 p-6 rounded-lg hover:border-emerald-500/40 transition-all glow-effect card-hover">
           <div class="w-10 h-10 rounded bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-4">
-            <i data-lucide="cpu" class="w-5 h-5"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
           </div>
           <h3 class="font-mono font-bold text-white text-base mb-2">Embedded Systems & Domotics</h3>
           <p class="text-slate-400 text-xs leading-relaxed">
@@ -215,9 +280,9 @@
         </div>
 
         <!-- Tarjeta 3: Hybrid & Divergent AI -->
-        <div class="bg-slate-900/50 border border-slate-800 p-6 rounded-lg hover:border-sky-400/40 transition-all glow-effect">
+        <div class="bg-slate-900/50 border border-slate-800 p-6 rounded-lg hover:border-sky-400/40 transition-all glow-effect card-hover">
           <div class="w-10 h-10 rounded bg-sky-400/10 text-sky-300 flex items-center justify-center mb-4">
-            <i data-lucide="network" class="w-5 h-5"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle><path d="M12 7v10"></path><path d="M12 7L7 9.5"></path><path d="M12 7l5 2.5"></path><path d="M12 17l-5-2.5"></path><path d="M12 17l5-2.5"></path></svg>
           </div>
           <h3 class="font-mono font-bold text-white text-base mb-2">Hybrid Systems Architect</h3>
           <p class="text-slate-400 text-xs leading-relaxed">
@@ -228,7 +293,7 @@
       </div>
     </section>
 
-    <!-- SECCIÓN DE REPOSITORIOS VECTORIZADOS (LISTOS PARA VINCULAR) -->
+    <!-- SECCIÓN DE REPOSITORIOS -->
     <section id="repositorios" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-slate-800/60">
       <div class="mb-12">
         <span class="text-xs font-mono text-sky-400 uppercase tracking-widest">// PROYECTOS VECTORIZADOS</span>
@@ -238,11 +303,11 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 font-mono">
         
         <!-- Repo 1: Domótica IA Web -->
-        <div class="p-6 rounded-xl bg-slate-900/70 border border-slate-800 hover:border-sky-500/50 transition-all glow-effect space-y-4">
+        <div class="p-6 rounded-xl bg-slate-900/70 border border-slate-800 hover:border-sky-500/50 transition-all glow-effect card-hover space-y-4">
           <div class="flex justify-between items-start">
             <div class="flex items-center gap-3">
               <div class="w-9 h-9 rounded bg-sky-500/10 text-sky-400 flex items-center justify-center">
-                <i data-lucide="home" class="w-5 h-5"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
               </div>
               <div>
                 <h3 class="font-bold text-white text-base">Domótica IA Web</h3>
@@ -256,19 +321,16 @@
           </p>
           <div class="pt-2 flex items-center justify-between border-t border-slate-800/60 text-[11px]">
             <span class="text-slate-500">Estado: Pendiente de auditoría</span>
-            <!-- Cuando tengas la URL, reemplaza '#' por el enlace real -->
-            <a href="#" class="text-sky-400 hover:underline flex items-center gap-1 opacity-60 pointer-events-none">
-              <span>Ver Repo</span> <i data-lucide="external-link" class="w-3 h-3"></i>
-            </a>
+            <span class="text-slate-500">Próximamente</span>
           </div>
         </div>
 
         <!-- Repo 2: Maximun Multihardware Core -->
-        <div class="p-6 rounded-xl bg-slate-900/70 border border-slate-800 hover:border-emerald-500/50 transition-all glow-effect space-y-4">
+        <div class="p-6 rounded-xl bg-slate-900/70 border border-slate-800 hover:border-emerald-500/50 transition-all glow-effect card-hover space-y-4">
           <div class="flex justify-between items-start">
             <div class="flex items-center gap-3">
               <div class="w-9 h-9 rounded bg-emerald-500/10 text-emerald-400 flex items-center justify-center">
-                <i data-lucide="cpu" class="w-5 h-5"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
               </div>
               <div>
                 <h3 class="font-bold text-white text-base">Maximun Multihardware Core</h3>
@@ -282,10 +344,7 @@
           </p>
           <div class="pt-2 flex items-center justify-between border-t border-slate-800/60 text-[11px]">
             <span class="text-slate-500">Estado: Pendiente de auditoría</span>
-            <!-- Cuando tengas la URL, reemplaza '#' por el enlace real -->
-            <a href="#" class="text-emerald-400 hover:underline flex items-center gap-1 opacity-60 pointer-events-none">
-              <span>Ver Repo</span> <i data-lucide="external-link" class="w-3 h-3"></i>
-            </a>
+            <span class="text-slate-500">Próximamente</span>
           </div>
         </div>
 
@@ -295,22 +354,30 @@
     <!-- SECCIÓN DE CONTACTO FINAL -->
     <section id="contacto" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-slate-800/60 text-center">
       <div class="max-w-2xl mx-auto space-y-6">
-        <h3 class="font-mono font-bold text-white text-xl">¿Interesado en conectar o colaborar?</h3>
+        <h2 class="font-mono font-bold text-white text-xl">¿Interesado en conectar o colaborar?</h2>
         <p class="text-xs text-slate-400 leading-relaxed">
-          Puntos de contacto oficiales de la infraestructura Maximun-Ai para consultas técnicas y desarrollo.
+          Puntos de contacto oficiales de la infraestructura Maximun-Ai para consultas técnicas, colaboraciones y desarrollo.
         </p>
 
         <div class="flex flex-wrap justify-center gap-4 font-mono text-xs pt-2">
-          <a href="https://wa.me/5492268415977?text=Hola%20Maximun-Ai,%20me%20interesa%20conectar." target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded bg-emerald-600/20 border border-emerald-500/40 hover:bg-emerald-600/30 text-emerald-400 font-semibold transition-all flex items-center gap-2">
-            <i data-lucide="message-square" class="w-4 h-4"></i> +54 9 2268 415977
+          <a href="https://wa.me/5492268415977?text=Hola%20Maximun-Ai,%20me%20interesa%20conectar." target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded bg-emerald-600/20 border border-emerald-500/40 hover:bg-emerald-600/30 text-emerald-400 font-semibold transition-all flex items-center gap-2 glow-effect card-hover">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            WhatsApp
           </a>
 
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded bg-blue-600/20 border border-blue-500/40 hover:bg-blue-600/30 text-blue-400 font-semibold transition-all flex items-center gap-2">
-            <i data-lucide="linkedin" class="w-4 h-4"></i> LinkedIn Profile
+          <a href="https://www.linkedin.com/company/maximun-ai-org/" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded bg-blue-600/20 border border-blue-500/40 hover:bg-blue-600/30 text-blue-400 font-semibold transition-all flex items-center gap-2 glow-effect card-hover">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
           </a>
 
-          <a href="mailto:Maximun-360@proton.me" class="px-5 py-2.5 rounded bg-purple-600/20 border border-purple-500/40 hover:bg-purple-600/30 text-purple-300 font-semibold transition-all flex items-center gap-2">
-            <i data-lucide="mail" class="w-4 h-4 text-purple-400"></i> Maximun-360@proton.me
+          <a href="mailto:Maximun-360@proton.me" class="px-5 py-2.5 rounded bg-purple-600/20 border border-purple-500/40 hover:bg-purple-600/30 text-purple-300 font-semibold transition-all flex items-center gap-2 glow-effect card-hover">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+            Email
+          </a>
+
+          <a href="https://github.com/Maximun-Ai" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded bg-slate-700/20 border border-slate-600/40 hover:bg-slate-700/30 text-slate-300 font-semibold transition-all flex items-center gap-2 glow-effect card-hover">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            GitHub
           </a>
         </div>
       </div>
@@ -321,15 +388,41 @@
   <!-- FOOTER -->
   <footer class="border-t border-slate-800/80 bg-[#030712] py-8 text-xs font-mono text-slate-500">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-      <p>&copy; Maximun-Ai // AI Project Orchestrator & Edge Computing Architect. All rights reserved.</p>
+      <p>&copy; 2024 Maximun-Ai. All rights reserved.</p>
       <div class="flex gap-4 text-slate-400">
-        <a href="#about" class="hover:text-sky-400">Página Oficial</a>
+        <a href="#about" class="hover:text-sky-400 transition-colors duration-200">Inicio</a>
+        <a href="#pilares" class="hover:text-sky-400 transition-colors duration-200">Especialización</a>
+        <a href="#repositorios" class="hover:text-sky-400 transition-colors duration-200">Proyectos</a>
+        <a href="#contacto" class="hover:text-sky-400 transition-colors duration-200">Contacto</a>
+        <a href="https://github.com/Maximun-Ai/Maximun-Ai.github.io" target="_blank" rel="noopener noreferrer" class="hover:text-sky-400 transition-colors duration-200">Código Fuente</a>
       </div>
     </div>
   </footer>
 
   <script>
-    lucide.createIcons();
+    // Inicializar iconos de Lucide
+    if (window.lucide) {
+      lucide.createIcons();
+    }
+
+    // Validación de carga
+    window.addEventListener('load', function() {
+      console.log('✅ Maximun-Ai Portfolio loaded successfully');
+      console.log('🚀 Status: ONLINE');
+    });
+
+    // Manejo de errores en recursos externos
+    window.addEventListener('error', function(event) {
+      if (event.target !== window) {
+        console.warn('⚠️ Resource loading error:', event.target.src || event.target.href);
+      }
+    });
+
+    // Detección de modo oscuro
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (prefersDark && !document.documentElement.classList.contains('dark')) {
+      document.documentElement.classList.add('dark');
+    }
   </script>
 </body>
 
