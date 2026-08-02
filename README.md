@@ -11,12 +11,12 @@ Infraestructura Base	Despliegue de portal principal y ruteo de dominios.	🟢 Ac
 Módulos Edge & IA	Integración de servicios, modelos y automatizaciones.	🟡 En Migración	--
 🛠️ Infraestructura y Despliegue
 Hosting & CDN: GitHub Pages
-Dominio Principal: maximun-ai.is-a.dev / maximun-ai.github.io
+Dominio Principal:maximun-ai.github.io
 📌 Contacto Institucional y Redes
-🌐 Sitio Web Principal: maximun-ai.is-a.dev
+🌐 Sitio Web Principal: maximun-ai.git.io
 🏢 Organización en GitHub: github.com/Maximun-Ai
 💼 LinkedIn: Maximun-AI en LinkedIn
-💬 Consultas e Información (WhatsApp): [https://wa.me/542268415977]
+💬 Consultas e Información :MAXIMUN-360@PROTON.ME
 ✉️ Correo Electrónico: MAXIMUN-360@PROTON.ME
 🤝 Contribuciones y Apoyo al Proyecto
 Si te interesa apoyar el desarrollo, la investigación en código abierto y la expansión de la infraestructura de Maximun-Ai, puedes realizar una contribución voluntaria:
